@@ -1,5 +1,4 @@
-﻿"在安装自动生成的vimrc文件中加入source $VIM/winvimrc/vimrc
-
+﻿
 command! Reloadsrc  source $VIM/winvimrc/vimrc
 let mapleader = ","
 set number "设置行号
