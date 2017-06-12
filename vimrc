@@ -37,12 +37,10 @@ set nofoldenable "启动vim关闭折叠
 
 colorscheme evening
 
-autocmd FileType ruby set shiftwidth=2
-autocmd FileType ruby set tabstop=2
-autocmd FileType ruby set softtabstop=2
-autocmd FileType ruby set expandtab
+autocmd FileType ruby,html,scss,css set shiftwidth=2 | set tabstop=2 | set softtabstop=2 | set expandtab
 
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set encoding=utf-8
+set fileencodings=ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1,cp936,gb2312,
 
 source $VIM/winvimrc/plugins_config/cfg_vundle.vim
 source $VIM/winvimrc/plugins_config/cfg_vimtweak.vim
