@@ -17,6 +17,7 @@ set linebreak "独立单词不分行
 set autoindent "自动缩进
 set smartindent
 
+set expandtab
 set tabstop=4 
 set shiftwidth=4
 set softtabstop=4
@@ -33,14 +34,17 @@ filetype plugin on
 filetype indent on "智能缩进
 
 set foldmethod=syntax "按语法折叠
-set nofoldenable "启动vim关闭折叠
+"set nofoldenable "启动vim关闭折叠
 
-colorscheme evening
+colorscheme desert
 
 autocmd FileType ruby,html,scss,css set shiftwidth=2 | set tabstop=2 | set softtabstop=2 | set expandtab
 
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,utf-16,cp936,gb18030,big5,euc-jp,euc-kr,latin1,cp936,gb2312,
+
+nmap <leader>w :w<cr>
+nmap <leader>wa :wa<cr>
 
 source $VIM/winvimrc/plugins_config/cfg_vundle.vim
 source $VIM/winvimrc/plugins_config/cfg_vimtweak.vim
