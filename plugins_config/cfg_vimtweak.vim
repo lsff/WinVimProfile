@@ -12,5 +12,5 @@ map <leader>mf :call libcallnr("vimtweak.dll","ToggleFullscreen",0)<cr>
 map <leader>mt :call libcallnr("vimtweak.dll","EnableTopMost",1)<cr>
 map <leader>mT :call libcallnr("vimtweak.dll","EnableTopMost",0)<cr>
 
-au GUIEnter * call libcallnr("vimtweak.dll", "SetAlpha", 235)
+au GUIEnter * call libcallnr("vimtweak.dll", "SetAlpha", 255)
 
